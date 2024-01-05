@@ -20,7 +20,7 @@ export class CardsComponent {
   
   _dialog = inject(MatDialog); 
 
-  openShowModal(character: any ){
+  openShowModal(character: Result ){
  
     const dialogRef = this._dialog.open(ModalComponent, {
       data : character
