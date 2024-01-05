@@ -1,0 +1,12 @@
+<div class="container_card"  >
+  <mat-card matRipple class="example-card" *ngFor="let character of characters" >
+    <mat-card-header>  
+      <mat-card-title>{{ character?.name }}</mat-card-title>
+      <mat-card-subtitle>{{ character?.species }}</mat-card-subtitle>
+    </mat-card-header>
+    <div class="container_img" (click)="openShowModal(character)">
+      <img class="img_character" [src]="character?.image" alt="Character Image" >
+    </div>
+   
+  </mat-card>
+</div>
